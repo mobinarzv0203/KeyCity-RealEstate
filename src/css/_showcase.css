@@ -1,0 +1,302 @@
+.input{
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  padding-inline: 0.5rem;
+  background-color: inherit;
+}
+
+.btn, .btn-loc{
+  background-color: var(--primary-color);
+  color: white;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+  font-size: small;
+}
+
+.btn{
+  border-radius: 100px;
+}
+
+.btn-loc{
+  border-radius: 10px;
+}
+.text-color{
+  color: var(--primary-color);
+}
+
+.font-mood{
+  font-weight: bold;
+}
+
+.divider{
+  border-left: 2px solid var(--third-color);
+  padding-left: 1rem;
+}
+
+#showcase{
+  min-height: auto;
+  background-color: #F9FBFC;
+  padding: 1rem;
+}
+
+#showcase .showcase{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  align-items: center;
+  margin-top: 1rem;
+  margin-inline: 2rem;
+  padding-inline: 0.5rem;
+}
+
+#showcase .showcase .title{
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1A1A1A;
+} 
+
+#showcase .showcase .paragraph{
+  color: var(--daark-color);
+  width: 350px;
+  margin-block: 1rem;
+}
+
+#showcase .showcase .search{
+  display: flex;
+  align-items: center;
+  margin-block: 1rem;
+  border: 2px solid #000;
+  border-radius: 100px;
+  padding-inline: 5px;
+  padding-block: 2px;
+  background-color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  max-width: 65%;
+}
+
+
+#showcase .showcase .tabs{
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+#showcase .showcase .tabs{
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  background-color: var(--light-color);
+  width: fit-content;
+}
+
+.tab-switch{
+  margin-right: 1rem;
+  padding-inline: 10px;
+  padding-block: 5px;
+  background-color: inherit;
+  border: none;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+#showcase .showcase .tabs .activate-mood{
+  border-bottom: 3px solid var(--primary-color);
+  
+}
+
+#showcase .showcase .tabs .not-activated-mood{
+  background-color: var(--secondary-color);
+  font-weight: 200;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-inline: 1rem;
+}
+
+#showcase .showcase .filter-by-location-time{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding: 1rem;
+  gap: 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--light-color);
+  background-color: var(--light-color);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#showcase .showcase .filter-by-location-time .f-loc,
+#showcase .showcase .filter-by-location-time .f-time{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+#showcase .showcase-right img{
+  border-radius: 15px;
+  box-shadow: -15px 15px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+}
+
+#showcase .showcase-right .profits{
+  display: flex;
+  justify-content: end;
+  margin-inline-end: 2rem;
+  margin-block-start: 1.5rem;
+  gap: 1rem;
+}
+
+#showcase .showcase-right .profits .cool-options,
+#showcase .showcase-right .profits .happy{
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-inline-end: 2rem;
+  border-radius: 10px;
+  border-start-end-radius: 3rem;
+  width: 150px;
+  height: 70px;
+}
+
+#showcase .showcase-right .profits .cool-options .cool-text,
+#showcase .showcase-right .profits .happy .happy-text{
+  font-size: 0.7rem;
+  padding-block-start: 10px;
+  padding-inline-start: 10px;
+}
+
+#showcase .showcase-right .profits .cool-options .cool-num,
+#showcase .showcase-right .profits .happy .happy-num{
+  font-size: 1.5rem;
+  padding-block-start: 10px;
+  padding-inline-start: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  #showcase .showcase{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #showcase .showcase-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #showcase .showcase-right img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin-inline: auto;
+  }
+
+  #showcase .showcase-right .profits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  #showcase .showcase-right .profits .cool-options,
+  #showcase .showcase-right .profits .happy {
+    width: 140px;
+    height: 60px;
+  }
+
+  #showcase .showcase-right .profits .cool-options .cool-num,
+  #showcase .showcase-right .profits .happy .happy-num {
+    font-size: 1.3rem;
+    padding-block: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #showcase .showcase{
+    margin-inline: 0.5rem;
+  }
+  #showcase .showcase .title {
+    font-size: 1.8rem;
+  }
+
+  #showcase .showcase .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .btn, .btn-loc {
+    font-size: 0.85rem;
+    padding-inline: 1rem;
+    padding-block: 0.4rem;
+  }
+
+  .tab-switch {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .input {
+    font-size: 0.85rem;
+  }
+
+  .divider{
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  #showcase .showcase .search{
+    max-width: 52%;
+  }
+
+  #showcase .showcase .filter-by-location-time{
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1.5rem;
+    width: 75%;
+  }
+
+  #showcase .showcase-right .profits{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #showcase .showcase-right .profits .cool-options,
+  #showcase .showcase-right .profits .happy {
+    width: 130px;
+    height: 60px;
+  }
+
+  #showcase .showcase-right .profits .cool-options .cool-num,
+  #showcase .showcase-right .profits .happy .happy-num {
+    font-size: 1.2rem;
+  }
+  
+  #showcase .showcase-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  #showcase .showcase-right .profits {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-inline: 0;
+  }
+
+  #showcase .showcase-right .profits .cool-options,
+  #showcase .showcase-right .profits .happy {
+    width: 90%;
+    max-width: 250px;
+    height: 60px;
+  }
+  
+  #showcase .showcase-right .profits .cool-num,
+  #showcase .showcase-right .profits .happy-num {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,64 @@
+#logo{
+  margin-inline: 10rem;
+  padding-block: 5rem;
+}
+#logo h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#logo .pics{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  padding: 16px;
+  margin-top: 2rem;
+}
+
+#logo .pics img{
+  width: 80%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    margin-inline: 5rem;
+    padding-block: 3.5rem;
+  }
+
+  #logo h1 {
+    font-size: 1.4rem;
+  }
+
+  #logo .pics {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  #logo .pics img{
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo{
+    margin-inline: 1rem;
+    padding-block: 2.5rem;
+  }
+  #logo h1 {
+    font-size: 1.3rem;
+  }
+
+  #logo .pics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  #logo .pics img{
+    width: 100%;
+    height: 100%;
+  }
+}
