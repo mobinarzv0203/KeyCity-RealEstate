@@ -1,11 +1,11 @@
 
 const logos = [
-  { src: "/public/images/houses/logo1.jpg", alt: "Real Estate" },
-  { src: "/public/images/houses/logo2.jpg", alt: "Company 2" },
-  { src: "/public/images/houses//logo3.jpg", alt: "Bauhouse Real Estate" },
-  { src: "/public/images/houses/logo4.jpg", alt: "Accusaf" },
-  { src: "/public/images/houses/logo5.jpg", alt: "Company 5" },
-  { src: "/public/images/houses/logo6.jpg", alt: "Business Name" },
+  { src: " /images/logo1.jpg", alt: "Real Estate" },
+  { src: " /images/logo2.jpg", alt: "Company 2" },
+  { src: " /images/logo3.jpg", alt: "Bauhouse Real Estate" },
+  { src: " /images/logo4.jpg", alt: "Accusaf" },
+  { src: " /images/logo5.jpg", alt: "Company 5" },
+  { src: " /images/logo6.jpg", alt: "Business Name" },
 ];
 
 const Icons = () => {

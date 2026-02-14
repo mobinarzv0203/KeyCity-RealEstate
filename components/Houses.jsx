@@ -8,7 +8,7 @@ const housesData = [
     baths: 2,
     size: '67.5 m²',
     price: '₹1.6 Cr - 1.87 Cr',
-    image: '/public/images/houses/house1.jpg',
+    image: '/images/house1.jpg',
     tag: 'popular',
     type: 'sale',
   },
@@ -19,7 +19,7 @@ const housesData = [
     baths: 2,
     size: '67.5 m²',
     price: '₹1.6 Cr - 1.87 Cr',
-    image: '/public/images/houses/house2.jpg',
+    image: '/images/house2.jpg',
     tag: 'popular',
     type: 'sale',
   },
@@ -30,7 +30,7 @@ const housesData = [
     baths: 2,
     size: '67.5 m²',
     price: '₹1.6 Cr - 1.87 Cr',
-    image: '/public/images/houses/house3.jpg',
+    image: '/images/house3.jpg',
     tag: 'popular',
     type: 'rent',
   },
@@ -41,7 +41,7 @@ const housesData = [
     baths: 2,
     size: '67.5 m²',
     price: '₹1.6 Cr - 1.87 Cr',
-    image: '/public/images/houses/house4.jpg',
+    image: '/images/house4.jpg',
     type: 'rent',
   },
   {
@@ -51,7 +51,7 @@ const housesData = [
     baths: 2,
     size: '67.5 m²',
     price: '₹1.6 Cr - 1.87 Cr',
-    image: '/public/images/houses/house5.jpg',
+    image: '/images/house5.jpg',
     type: 'sale',
   },
   {
@@ -61,7 +61,7 @@ const housesData = [
     baths: 2,
     size: '67.5 m²',
     price: '₹1.6 Cr - 1.87 Cr',
-    image: '/public/images/houses/house6.jpg',
+    image: '/images/house6.jpg',
     type: 'rent',
   },
   {
@@ -71,7 +71,7 @@ const housesData = [
     baths: 2,
     size: '60 m²',
     price: '₹1.4 Cr - 1.6 Cr',
-    image: '/public/images/houses/house7.jpg',
+    image: '/images/house7.jpg',
     type: 'sale',
   },
 ];
@@ -115,7 +115,7 @@ const Houses = () => {
         {visibleProperties.map((p) => (
           <div key={p.id} className="property-card">
             <div className="image-container">
-              <img src={p.image} alt={p.title} className="property-image" />
+              <img src={p.image} alt={p.title} className="property-image"/>
               {p.tag === 'popular' && (
                 <span className="popular-tag">⭐ POPULAR</span>
               )}

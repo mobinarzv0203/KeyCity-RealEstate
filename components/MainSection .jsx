@@ -11,7 +11,7 @@ export default function MainSection() {
       subtitle:
         "Join us in shaping a brighter tomorrow. At our core, we’re dedicated to building more than structures; we’re crafting communities and fostering growth.",
       items: [],
-      image: "/public/images/houses/Real-State-Team1.jpg",
+      image: "/images/Real-State-Team1.jpg",
       buttonText: "Explore Now",
       imagePosition: "left",
       onButtonClick: () => handleClick("Mission")
@@ -28,7 +28,7 @@ export default function MainSection() {
         "Transparent Communication",
         "Satisfaction Guaranteed"
       ],
-      image: "/public/images/houses/Renovation1.jpg",
+      image: "/images/Renovation1.jpg",
       buttonText: "Get Started",
       imagePosition: "right",
       onButtonClick: () => handleClick("Renovation")
@@ -46,7 +46,7 @@ export default function MainSection() {
           "Virtual Tours Available",
           "Expert Guidance"
       ],
-      image: "/public/images/houses/Explore1.jpg",
+      image: "/images/Explore1.jpg",
       buttonText: "Explore Now",
       imagePosition: "left",
       onButtonClick: () => handleClick("Listings")

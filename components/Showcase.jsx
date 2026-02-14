@@ -86,7 +86,7 @@ export default function HomePage() {
         {/* Right Image Section */}
         <div className="showcase-right">
           <img
-            src={"/public/images/houses/Showcase2.jpg"}
+            src={"/images/Showcase2.jpg"}
             alt="House"
           />
           <div className="profits">
